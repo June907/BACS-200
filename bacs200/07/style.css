@@ -1,0 +1,13 @@
+body {
+    background-color: white;
+}
+
+h1 {
+    color: blue;
+    border: 1px solid blue;
+    background-color: skyblue;
+}
+
+a {
+    color: blue;
+}
