@@ -1,12 +1,13 @@
 body
 {
-    background-color: black;
+    background-color: ;
+
     
 }
 h1
 {
     font-family: "Times New Roman", Times, serif;
-    font-size: :20000000px;
+    font-size: :200px;
     color:red;
     background-color: black;
     text-align: center;
@@ -14,8 +15,15 @@ h1
     
 }
 img {
-    display: block;
+    
+    margin-top: auto;
     margin-left:auto;
     margin-right: auto;
-    width: 100%
+    width:80%
+}
+rectangle{
+    width:500px;
+    height:800px;
+    border:1px solid #000;
+    background:burlywood;
 }
