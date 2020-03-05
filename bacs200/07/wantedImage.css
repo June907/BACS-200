@@ -1,0 +1,41 @@
+body{
+    background-color: gray;
+    
+}
+header{
+    border: soild  gray;
+    border-radius: 500px;
+    
+    text-align: center;
+    background-color: aliceblue;
+    padding: 40px;
+    
+    
+}
+h1{
+    text-align: center;
+    
+    
+}
+main{
+    
+    background-color: burlywood;
+    border:soild  50px;
+    
+}
+aside{
+    background-color: white;
+    border-width: 500px;
+    border-color: white;
+    border:200px soild;
+    width:344px;
+    height: 220px;
+    margin-left: 550px;
+    margin-bottom:-233px;
+    
+    
+    
+}
+footer{
+    text-align: center;
+}
