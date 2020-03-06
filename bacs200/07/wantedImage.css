@@ -1,41 +1,56 @@
-body{
-    background-color: gray;
-    
+body {
+    background-color: beige;
+
 }
-header{
-    border: soild  gray;
+
+header {
+    border: soild gray;
     border-radius: 500px;
-    
+
     text-align: center;
-    background-color: aliceblue;
+    background-color: skyblue;
     padding: 40px;
-    
-    
+
+
 }
-h1{
+
+h1 {
     text-align: center;
-    
-    
+
+
 }
-main{
-    
+
+main {
+
     background-color: burlywood;
-    border:soild  50px;
-    
+    border: soild 50px;
+    width: 1000px;
+
+    margin: auto;
+
 }
-aside{
+
+aside {
+    border: 20px solid gray;
     background-color: white;
     border-width: 500px;
     border-color: white;
-    border:200px soild;
-    width:344px;
-    height: 220px;
-    margin-left: 550px;
-    margin-bottom:-233px;
-    
-    
-    
+
+    width: 344px;
+    float: right;
+
+
+
+
 }
-footer{
+
+img {
+    display: block;
+    margin: auto;
+    max-width: 50%;
+}
+
+footer {
+
     text-align: center;
 }
