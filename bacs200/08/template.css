@@ -31,57 +31,56 @@ h1.bg{
     text-align:center;
     box-shadow: 2px 2px 5px gray;
 }
-h2 {
-    color: #0E3D65;
-    background-color: #F6B018;
-    border: 2px solid #0E3D65;
+/*homepage*/
+h2.homepage {
+    color: #ba6363;
+    background-color: #eacdcd;
+    border: 5px solid #ba6363;
+    max-width: 200px;
+    float:left;
     text-align: center;
     margin: 10px 20px;
     padding: 10px 20px;
-    box-shadow: 2px 2px 5px gray;
+    
 }
-h1.title {
+h1 {
     margin: 20px;
     padding: 30px;
     color: #ba6363;
     background-color: #eacdcd;
     border: 5px solid #ba6363;
     text-align: center;
-    
     box-shadow: 10px 10px 13px gray;
 }
-h1,h2{
-    color: #ba6363;
-    background-color: #eacdcd;
-    border: 5px solid #ba6363;
-}
+
+
 /*Top menu Bar*/
+
 ul{
     list-style-type: none;
-    margin: 10px;
-    padding:10px;
+    margin: 0;
+    padding:0;
     overflow: hidden;
     border:5px solid #ba6363;
     background-color: #eacdcd;
-    float:left;
-    
+    max-width: 200px;
 }
 li{
-    float:left;
     
+    border-bottom:1px solid;
 }
 
-li a, .dropbtn{
-    display:inline-block;
+li a{
+    display:block;
     color:#ba6363;
-    background-color:#eacdcd;
-    text-align: center;
     padding: 8px 16px;
     text-decoration: none;
-    font-size: 25px;
+
+}
+li:last-child{
+    border-right:none;
     
 }
-
 li a.active{
     background-color: #eacdcd;
     
@@ -91,10 +90,19 @@ li a:hover:not(.active){
     color:white;
 }
 /*DropDownList*/
+.dropbtn{
+    background-color: #eacdcd;
+    color:#ba6363;
+    border: 5px solid #ba6363;
+    font-size: 30px;
+    margin: 10px 20px;
+    padding: 10px 20px;
+    cursor:pointer;
+    
+}
 
-
-li.dropdown {
-  
+.dropdown {
+  position: relative;
   
   display: inline-block;
 }
@@ -102,7 +110,7 @@ li.dropdown {
 .dropdown-content {
   display: none;
   position: absolute;
-  
+  right:0;
   background-color: #eacdcd;
   min-width: 160px;
   
@@ -127,6 +135,6 @@ li.dropdown {
   display: block;
 }
 
-
-
-
+.dropdown:hover .dropbtn {
+  background-color: #eacdcd;
+}
