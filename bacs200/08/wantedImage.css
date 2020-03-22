@@ -1,0 +1,56 @@
+body {
+    background-color: beige;
+
+}
+
+header {
+    border: soild gray;
+    border-radius: 500px;
+
+    text-align: center;
+    background-color: skyblue;
+    padding: 40px;
+
+
+}
+
+h1 {
+    text-align: center;
+
+
+}
+
+main {
+
+    background-color: burlywood;
+    border: soild 50px;
+    width: 1000px;
+
+    margin: auto;
+
+}
+
+aside {
+    border: 20px solid gray;
+    background-color: white;
+    border-width: 5px;
+    border-color: white;
+
+    width: 344px;
+    float: right;
+
+
+
+
+}
+
+img {
+    display: block;
+    margin: auto;
+    max-width: 50%;
+}
+
+footer {
+
+    text-align: center;
+}
