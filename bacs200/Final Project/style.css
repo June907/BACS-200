@@ -1,0 +1,56 @@
+h1{
+    text-align: center;
+    
+    float:left;
+    
+}
+h2.list{
+    text-align: center;
+    
+    float:right;
+}
+ul.list{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    background-color: white;
+}
+li.list{
+    float:left;
+}
+li.list a{
+    display:block;
+    color:black;
+    text-align: center;
+    
+    text-decoration: none;
+    padding: 14px 16px;
+}
+li.list a :hover{
+    background-color: white;
+}
+ul.menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+li.menu{
+    float:left;
+    
+    
+}
+li.menu a{
+    display:inline;
+    color:black;
+    text-align: left;
+    
+    text-decoration: none;
+    padding: 14px 16px;
+}
+li.menu a :hover{
+    background-color: white;
+}
+    
