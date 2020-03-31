@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<body>
-    <head>
+<main>
+<head>
         <meta charset="UTF-8">
         <title>Video Game Feeds, Reviews</title>
         <link href="style.css" rel="stylesheet">
         <h1><a href="index.html">Game Session</a></h1>
-    </head>
-    <main>
-            <h2 class="list"> <ul class="list">
+        <h2 class="list"> <ul class="list">
             <li class="list"> 
                 <a href="">News</a></li>
             <li class="list">
@@ -29,7 +27,8 @@
             </li>           
             
             </ul></h2>
-
+    </head>
+    <body>
         
         <ul class="menu">
             <li class="menu">
@@ -51,10 +50,76 @@
             <li class="menu">
                 <a href="">PlayStation 5</a>
             
-            </li>
-        
+            </li>     
         </ul>
+            
+        
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+  
+            <img src="bloodborne2.jpg" style="width:100%;">
+            <div class="text"><a href="">Caption Text</a></div>
+            </div>
+
+            <div class="mySlides fade">
+  
+            <img src="Animal%20Crossing.jpg" style="width: 100%;">
+            <div class="text"><a href="">Caption Two</a></div>
+            </div>
+
+            <div class="mySlides fade">
+  
+            <img src="RE3.jpg" style="width: 100%;">
+            <div class="text"><a href="">Caption Three</a></div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+
+
+            
+        
          
-    
-    </main>
 </body>
+    </main>
