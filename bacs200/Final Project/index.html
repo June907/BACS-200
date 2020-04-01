@@ -32,7 +32,7 @@
         
         <ul class="menu">
             <li class="menu">
-                <a href="">Resident Evil</a>
+                <a href="">Resident Evil3</a>
             
             </li>
             <li class="menu">
@@ -52,26 +52,39 @@
             
             </li>     
         </ul>
-            
+        <ul class="sideMenu">
+                <li class="sideMenu"><a href="">News 1</a></li>
+                <li class="sideMenu"><a href="">News 2</a></li>
+                <li class="sideMenu"><a href="">News 3</a></li>
+                <li class="sideMenu"><a href="">News 4</a></li>
+                <li class="sideMenu"><a href="">News 5</a></li>
+        </ul>
+
         
-        <div class="slideshow-container">
+            
+    <slide>
+            <div class="slideshow-container">
 
             <div class="mySlides fade">
-  
-            <img src="bloodborne2.jpg" style="width:100%;">
-            <div class="text"><a href="">Caption Text</a></div>
+                <a href="https://www.ign.com/articles/persona-5-royal-review">
+                <img src="p5.jpg" alt="persona 5 Royal" style="width:100%;">
+                    </a>
+                <div class="text"><a href="https://www.ign.com/articles/persona-5-royal-review"> Persona 5 Royal IGN Review</a></div>
             </div>
-
+            
+                    
             <div class="mySlides fade">
-  
+            <a href="https://www.cnet.com/how-to/14-best-animal-crossing-new-horizons-tips-for-nintendo-switch-updated/">
             <img src="Animal%20Crossing.jpg" style="width: 100%;">
-            <div class="text"><a href="">Caption Two</a></div>
+                </a>
+            <div class="text"><a href="https://www.cnet.com/how-to/14-best-animal-crossing-new-horizons-tips-for-nintendo-switch-updated/">14 best Animal Crossing: New Horizons tips</a></div>
             </div>
 
             <div class="mySlides fade">
-  
-            <img src="RE3.jpg" style="width: 100%;">
-            <div class="text"><a href="">Caption Three</a></div>
+            <a href="https://www.gamespot.com/articles/new-nioh-2-update-addresses-difficulty-concerns-fu/1100-6475473/">
+            <img src="nioh2.jpg" style="width: 100%;">
+                </a>
+            <div class="text"><a href="https://www.gamespot.com/articles/new-nioh-2-update-addresses-difficulty-concerns-fu/1100-6475473/">New Nioh 2 Update Addresses Difficulty Concerns...</a></div>
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -80,41 +93,71 @@
         </div>
         <br>
 
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
+        </slide>
+
+
+            
+        
+        
+            
+        
+
 
 <script>
-var slideIndex = 1;
+var slideIndex = 0;
+    
 showSlides(slideIndex);
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
+    clearTimeout(timer);
 }
 
 function currentSlide(n) {
   showSlides(slideIndex = n);
+    clearTimeout(timer);
 }
+autoslide();
 
-function showSlides(n) {
+function autoslide() {
   var i;
+  var timer=null;    
   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+  
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+
+  slides[slideIndex-1].style.display = "block";
+    
+  
+  timer=setTimeout(autoslide, 5000); // Change image every 2 seconds
+
+}
+showSlides();
+function showSlides(n) {
+  
+  var i;
+  var slides = document.getElementsByClassName("mySlides fade");
+  
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";  
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
+
   slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+  
 }
+    
+
+
+
 
 </script>
+
 
 
 
@@ -123,3 +166,4 @@ function showSlides(n) {
          
 </body>
     </main>
+</html>
