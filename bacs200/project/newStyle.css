@@ -1,0 +1,127 @@
+body,html{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+a.title:visited{
+    color:black;
+}
+a{color:white}
+a:visited{
+    color: white;
+}
+h1{
+    
+    
+    float:left;
+    
+}
+h2.list{
+    z-index: 20;
+    
+    float:right;
+}
+ul.list{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    background-color: white;
+}
+li.list{
+    float:left;
+}
+li.list a{
+    display:block;
+    color:black;
+    text-align: center;
+    
+    text-decoration: none;
+    padding: 14px 16px;
+}
+li.list a :hover{
+    background-color: white;
+}
+main{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+h1.treding{
+    
+    margin: 0px;
+    padding: 0px;
+    
+    width:100%;
+    text-align: left;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;  
+}
+.container {
+    
+    margin: 0;
+    padding: 0;
+    
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+    
+}
+
+.bot {
+    transition: .5s ease;
+    opacity: 0.2;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    width:100%;
+    font-size: 20px;
+    bottom: -4%;
+    left:25%;
+    transform: translate(-25%, -25%);
+    -ms-transform: translate(-25%, -25%)
+}
+.container:hover .image {
+  opacity: 0.5;
+}
+
+.container:hover .bot {
+  opacity: 1;
+  
+}
+.text {
+    background-color: black;
+    color: white;
+    font-size: 26px;
+    padding: 16px 32px;
+    text-align: center;
+    
+}
+img.mainimg{
+    
+    width:100%;
+    height:auto;
+}
+
+a.mainnew{
+    color: white;
+    text-decoration: none;
+}
+
+img.sideimg{
+    width:100%;
+    height: auto;
+    
+    
+    
+}
+

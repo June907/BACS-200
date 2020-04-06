@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<main>
+
 <head>
         <meta charset="UTF-8">
         <title>Video Game Feeds, Reviews</title>
         <link href="style.css" rel="stylesheet">
-        <h1><a href="index.html">Game Session</a></h1>
+        <h1><a class="title" color:black style="text-decoration: none"href="index.html">Game Session</a></h1>
+        
         <h2 class="list"> <ul class="list">
             <li class="list"> 
-                <a href="">News</a></li>
+                <a href="news.html">News</a></li>
             <li class="list">
                 <a href="">Video</a>
             
@@ -29,7 +30,7 @@
             </ul></h2>
     </head>
     <body>
-        
+        <h3 class="menu">
         <ul class="menu">
             <li class="menu">
                 <a href="">Resident Evil3</a>
@@ -52,6 +53,7 @@
             
             </li>     
         </ul>
+            </h3>
         <ul class="sideMenu">
                 <li class="sideMenu"><a href="">News 1</a></li>
                 <li class="sideMenu"><a href="">News 2</a></li>
@@ -59,6 +61,7 @@
                 <li class="sideMenu"><a href="">News 4</a></li>
                 <li class="sideMenu"><a href="">News 5</a></li>
         </ul>
+            
 
         
             
@@ -67,24 +70,30 @@
 
             <div class="mySlides fade">
                 <a href="https://www.ign.com/articles/persona-5-royal-review">
-                <img src="p5.jpg" alt="persona 5 Royal" style="width:100%;">
+                <img class="image" src="img/p5.jpg" alt="persona 5 Royal" width="1980px" height="1080px">
                     </a>
-                <div class="text"><a href="https://www.ign.com/articles/persona-5-royal-review"> Persona 5 Royal IGN Review</a></div>
+                <div class="bot">
+                    <div class="text"><a style="text-decoration: none" href="https://www.ign.com/articles/persona-5-royal-review"> Persona 5 Royal IGN Review</a></div>
+                </div>
             </div>
             
                     
             <div class="mySlides fade">
             <a href="https://www.cnet.com/how-to/14-best-animal-crossing-new-horizons-tips-for-nintendo-switch-updated/">
-            <img src="Animal%20Crossing.jpg" style="width: 100%;">
+            <img class="image" src="img/AnimalCrossing.jpg" width="1980px" height="1080px">
                 </a>
-            <div class="text"><a href="https://www.cnet.com/how-to/14-best-animal-crossing-new-horizons-tips-for-nintendo-switch-updated/">14 best Animal Crossing: New Horizons tips</a></div>
-            </div>
+                <div class="bot">
+                    <div class="text"><a style="text-decoration: none" href="https://www.cnet.com/how-to/14-best-animal-crossing-new-horizons-tips-for-nintendo-switch-updated/">14 best Animal Crossing: New Horizons tips</a></div>
+                    </div>
+                </div>
 
             <div class="mySlides fade">
             <a href="https://www.gamespot.com/articles/new-nioh-2-update-addresses-difficulty-concerns-fu/1100-6475473/">
-            <img src="nioh2.jpg" style="width: 100%;">
+            <img class="image" src="img/nioh2.jpg" width="1980px" height="1080px">
                 </a>
-            <div class="text"><a href="https://www.gamespot.com/articles/new-nioh-2-update-addresses-difficulty-concerns-fu/1100-6475473/">New Nioh 2 Update Addresses Difficulty Concerns...</a></div>
+                <div class="bot">
+                    <div class="text"><a style="text-decoration: none" href="https://www.gamespot.com/articles/new-nioh-2-update-addresses-difficulty-concerns-fu/1100-6475473/">New Nioh 2 Update Addresses Difficulty Concerns...</a></div>
+                </div>
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -165,5 +174,5 @@ function showSlides(n) {
         
          
 </body>
-    </main>
+
 </html>
