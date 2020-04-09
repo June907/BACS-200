@@ -1,22 +1,26 @@
-body,html{
-    margin-left: 100px;
-    margin-right: 100px;
+* {
+    margin:0;
+    padding: 0;
 }
-a.title:visited{
-    color:black;
-}
-a{color:white}
-a:visited{
-    color: white;
-}
-h1{
-    text-align: center;
-    text-decoration: none;
-    float:left;
-    z-index: 1;
-    
+.grid{
+    display:grid;
+    grid-template-columns: 1fr 700px 700px 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        ". title header ."
+        ". menu menu ."
+        ". slideshow slideshow ."
+       ;
+        
 }
 
+.title{
+    grid-area: title;
+}
+.header{
+    grid-area: header;
+    
+}
 ul.list{
     
     list-style-type: none;
@@ -27,7 +31,7 @@ ul.list{
     float:right;
     font-size:24px;
     font-weight: bold;
-    z-index: 1;
+    
 }
 li.list{
     float:left;
@@ -44,10 +48,9 @@ li.list a :hover{
     background-color: white;
 }
 
-
-
-
-
+.menu{
+    grid-area: menu;
+}
 ul.menu{
     
     display:block;
@@ -57,22 +60,20 @@ ul.menu{
     padding: 10px;
     color: white;
     display:inline-block;
-    left:70px;
+    left:200px;
         
     margin: auto;
     position: relative;
     
     list-style:none;
     overflow: hidden;
-    
-    
-    
 }
    
-
 li.menu{
-    float: left;
+    
+    float:left;
     border-right:3px solid wheat;
+    
 }
  
 
@@ -80,38 +81,20 @@ li.menu a{
     display:block;
     color:black;
     text-align: center;
-    
     text-decoration: none;
     padding: 14px 16px;
 }
 li.menu a :hover{
     background-color: white;
 }
-/*Side Menu*/
-ul.sideMenu{
-    list-style-type: none;
-    margin:0;
-    padding:0;
-    background-color:white;
-    position: fixed;
-    
-}
-li.sideMenu a{
-    color:black;
-    text-decoration: none;
-    border-bottom: 5px solid wheat;
-     
-}
-li.sideMenu{
-    font-family: "Times New Roman", Times, serif;
-    font-size:26px;
-}
+.slideshow{
+    grid-area: slideshow;
 
-/* Slideshow container */
+}
 .slideshow-container {
     margin: 0;
     padding: 0;
-    
+    max-height: 100px;
     max-width: 1000px;
     position: relative;
     margin: auto;
@@ -187,6 +170,7 @@ li.sideMenu{
     padding: 16px 32px;
     text-align: center;
     text-decoration: none;
+    top:200px;
     
 }
 
@@ -212,35 +196,12 @@ li.sideMenu{
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
-/*imglist*/
-p{
-    width: 100%;
-    text-align: left;
-    margin:10px;;
-    padding: 10px;;
-    font-size:36px;
-
-}
-
-.row {
-  display: flex;
-}
-
-/* Create three equal columns that sits next to each other */
-.column {
-  flex: 33.33%;
-  padding: 10px;
-}
-div p{
-    color:black;
-    text-decoration: none;
-    font-size:24px;
-    text-align: center;
-    margin:5px;;
-    padding:0;
+.content{
+    grid-area: content;
     
 }
 
+.footer{
+    grid-area: footer;
+}
 
-
-    
