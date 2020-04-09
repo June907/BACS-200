@@ -1,0 +1,2 @@
+This is my final project for class Bacs-495 web-design. I am planing to create a video games news website that similiar 
+with ign and gamespot. It will contain sildeshow, server menu, top stories section and video section.
