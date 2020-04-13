@@ -116,12 +116,30 @@ a.mainnew{
     color: white;
     text-decoration: none;
 }
+p{
+    width: 100%;
+    text-align: left;
+    margin:10px;;
+    padding: 10px;;
+    font-size:36px;
 
-img.sideimg{
-    width:100%;
-    height: auto;
-    
-    
+}
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 10px;
+}
+div p{
+    color:black;
+    text-decoration: none;
+    font-size:24px;
+    text-align: center;
+    margin:5px;;
+    padding:0;
     
 }
 
