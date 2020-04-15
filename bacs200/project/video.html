@@ -61,72 +61,84 @@
     </header>
     <main>
         <div class="banner">
-            <h1>Video</h1>
-            <div class="videowrapper">
-                            <div class="slideshow-container">
-
-            <div class="mySlides fade">
-                <iframe src="https://www.youtube.com/embed/OiaTPLiYyMU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-            </div>
             
-                    
-            <div class="mySlides fade">
-            <a href="https://www.cnet.com/how-to/14-best-animal-crossing-new-horizons-tips-for-nintendo-switch-updated/">
-            <img class="image" src="img/AnimalCrossing.jpg" alt="Animal Crossing" width="1980px" height="1080px">
-                </a>
-     
+            <div class="videowrapper">
+                <div class="mySlides fade">
+                    <iframe src="https://www.youtube.com/embed/Ujk85npaCio?mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                <div class="mySlides fade">
+                    <iframe src="https://www.youtube.com/embed/OiaTPLiYyMU?mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-
-            <div class="mySlides fade">
-            <a href="https://www.gamespot.com/articles/new-nioh-2-update-addresses-difficulty-concerns-fu/1100-6475473/">
-            <img class="image" src="img/nioh2.jpg" alt="nioh2" width="1980px" height="1080px">
-                </a>
-                
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-               
-                
-            </div>
+                <div class="mySlides fade">
+                    <iframe src="https://www.youtube.com/embed/ftEeyyKrgFg?mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="mySlides fade">
+                    <iframe src="https://www.youtube.com/embed/I8F0Bc-8idE?mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="mySlides fade">
+                    <iframe src="https://www.youtube.com/embed/9-X8NRPH57w?mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>       
             </div>
         </div>
-    </main>
-    </body>
-    <script>
-var slideIndex = 0;
-    
-showSlides(slideIndex);
+            <thumbnail>
+                <div class="banner">
+                    <div class="row">
+                        <div class="column">
+                          <img class="demo cursor" src="img/AnimalCrossing.jpg" style="width:100%" onclick="currentSlide(1)" alt="animalCrossing">
+                        </div>
+                        <div class="column">
+                          <img class="demo cursor" src="https://boygeniusreport.files.wordpress.com/2020/04/resident-evil-4-1.jpg?quality=98&strip=all" style="width:100%" onclick="currentSlide(2)" alt="resident evil4">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="img/Uncharted%20Collection.jpg" style="width:100%" oneclick="currentSlide(3)" alt="Uncharted Collection">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="https://image-cdn.essentiallysports.com/wp-content/uploads/20200411161627/Cyberpunk-2077.jpg"
+                                 style="width: 100%" oneclick="currentSlide(4)" alt="cyberpunk2077">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="https://gh.cdn.sewest.net/assets/ident/news/final-fantasy-vii-remake-dynamic-themes/en_US/FFVIIR_Key_Art_1920x1080.jpg?quality=65" style="width:100%" oneclick="currentSlide(5)" alt="Final fatasy7">
+                        </div>
+                      </div>
+                </div>
+        </thumbnail>
 
+        
+    </main>
+    
+    <script>
+var slideIndex = 1;
+showSlides(slideIndex);
 function plusSlides(n) {
   showSlides(slideIndex += n);
-    clearTimeout(timer);
+    
 }
-
 function currentSlide(n) {
   showSlides(slideIndex = n);
-    clearTimeout(timer);
-}
-
-
-
-showSlides();
+    
+} 
 function showSlides(n) {
-  
-  var i;
-  var slides = document.getElementsByClassName("mySlides fade");
-  
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
+    var i;
+    var slides = document.getElementsByClassName("mySlides fade");
+    var dots=document.getElementsByClassName("demo");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+        }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace("active", "");
+        }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += "active";
 
-  slides[slideIndex-1].style.display = "block";  
-  
-}
+    }
+
 
 
 </script>
+</body>
+</html>
            
