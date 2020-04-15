@@ -67,9 +67,7 @@
 
             <div class="mySlides fade">
                 <iframe src="https://www.youtube.com/embed/OiaTPLiYyMU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="bot">
-                    <div class="text"><a style="text-decoration: none" href="https://www.ign.com/articles/persona-5-royal-review"> Persona 5 Royal IGN Review</a></div>
-                </div>
+
             </div>
             
                     
@@ -77,18 +75,14 @@
             <a href="https://www.cnet.com/how-to/14-best-animal-crossing-new-horizons-tips-for-nintendo-switch-updated/">
             <img class="image" src="img/AnimalCrossing.jpg" alt="Animal Crossing" width="1980px" height="1080px">
                 </a>
-                <div class="bot">
-                    <div class="text"><a style="text-decoration: none" href="https://www.cnet.com/how-to/14-best-animal-crossing-new-horizons-tips-for-nintendo-switch-updated/">14 best Animal Crossing: New Horizons tips</a></div>
-                    </div>
+     
                 </div>
 
             <div class="mySlides fade">
             <a href="https://www.gamespot.com/articles/new-nioh-2-update-addresses-difficulty-concerns-fu/1100-6475473/">
             <img class="image" src="img/nioh2.jpg" alt="nioh2" width="1980px" height="1080px">
                 </a>
-                <div class="bot">
-                    <div class="text"><a style="text-decoration: none" href="https://www.gamespot.com/articles/new-nioh-2-update-addresses-difficulty-concerns-fu/1100-6475473/">New Nioh 2 Update Addresses Difficulty Concerns...</a></div>
-                </div>
+                
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -114,25 +108,9 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
     clearTimeout(timer);
 }
-autoslide();
 
-function autoslide() {
-  var i;
-  var timer=null;    
-  var slides = document.getElementsByClassName("mySlides");
-  
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
 
-  slides[slideIndex-1].style.display = "block";
-    
-  
-  timer=setTimeout(autoslide, 5000); // Change image every 5 seconds
 
-}
 showSlides();
 function showSlides(n) {
   

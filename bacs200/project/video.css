@@ -86,11 +86,7 @@ a.newgame:hover{
     bottom: 0px;
     height:100%;
     width:100%;
-    opacity: 1;
-    display: block;
-    transition: .5s ease;
-    backface-visibility: hidden;
-    text-decoration: none;
+
     
 }
 
@@ -136,34 +132,4 @@ a.newgame:hover{
   text-decoration: none;
 }
 
-.bot {
-    transition: .5s ease;
-    opacity: 0.2;
-    position: absolute;
-    margin: 0px;
-    padding: 0px;
-    width:100%;
-    font-size: 20px;
-    bottom: -3%;
-    left:25%;
-    transform: translate(-25%, -25%);
-    -ms-transform: translate(-25%, -25%);
-    text-decoration: none;
-}
-.slideshow-container:hover .image {
-  opacity: 0.5;
-}
 
-.slideshow-container:hover .bot {
-  opacity: 1;
-  
-}
-.text {
-    background-color: black;
-    color: white;
-    font-size: 26px;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    
-}
