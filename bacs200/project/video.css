@@ -2,12 +2,19 @@
     margin:0;
     padding:0;
 }
+a{
+    text-decoration: none;
+}
 a:visited{
     color:black;
 }
 .banner{
     margin:0 auto;
-    width: 1000px;
+    width: 1500px;
+}
+.wraper{
+    margin: 0 auto;
+    width:1000px;
 }
 nav.list{
     width:100%;
@@ -140,6 +147,29 @@ a.newgame:hover{
 .demo:hover {
   opacity: 1;
 }
+/* image gallery*/
+p.imgtitle{
+    font-size:36px;
+    font-weight: bold;
+    line-height: 100px;
+    text-transform: capitalize;
+    
+}
+.imgrow{
+    display:flex;
+}
+.imgcol{
+    flex:16.666%;
+    padding:8px;
+}
+p.imgtext{
+    font-size:22px;
+    line-height:30px;
+    font-weight:bold;
+    color:black;
+}
+
+
 
 
 
