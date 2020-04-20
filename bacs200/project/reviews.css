@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+    
+}
+a:visited{
+    color:black;
+}
+.banner{
+    margin:0 auto;
+    width: 1500px;
+}
+.wraper{
+    margin: 0 auto;
+    width:1000px;
+}
+nav.list{
+    width:100%;
+    height:100px;
+    background-color: white;  
+}
+
+.title{
+    float:left;
+    display: inline-block;
+    list-style: none;
+    line-height: 100px;
+}
+li.list{
+    float:left;
+    display: inline-block;
+    list-style: none;
+    line-height: 100px;
+    
+}
+a.title{
+    font-size:30px;
+    font-weight: bold;
+    display:block;
+    text-decoration: none;
+    color:black;
+}
+a.list{
+    display:block;
+    text-decoration: none;
+    font-size:23px;
+    padding:0 20px;
+    font-weight: bold;
+    color:black;
+}
+a.list:hover{
+    color:blue;
+}
+nav.newgame{
+    width:100%;
+    height:60px;
+    background-color:white;
+    border: 2px solid gray;
+    border-right:none;
+    border-left:none;
+}
+
+li.newgame{
+    float:left;
+    display:inline-block;
+    list-style:none;
+    line-height: 60px;
+    border-right: 3px ridge gray;
+}
+a.newgame{
+    
+    text-decoration: none;
+    font-size:16px;
+    padding:0 20px;
+    color:black;
+}
+a.newgame:hover{
+    color:blue;
+}
+
+
+.reviews-row{
+    display:flex;
+}
+.reviews-image{
+    width: 100%; 
+}
+.hiddenimg{
+    width:100%;
+}
+.reviews-col1{
+    width:33.33%;
+    border: 3px solid black;
+    margin:5px;
+    text-align: center;
+    background-image:url(https://cdn.images.express.co.uk/img/dynamic/143/590x/secondary/GTA-6-news-2396709.webp?r=1585838420454);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.popup {
+  transition: .5s ease;
+  opacity: 0;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%); 
+}
+.hiddenimg:hover .popup{
+    opacity: 1;
+}
+.text{
+    border: 5px solid white;
+    background-color:black;
+    font-size:46px;
+    color:white;
+}
+
+.reviews-col2{
+    width:33.33%;
+    border: 3px solid black;
+    margin:5px;
+    text-align: center;
+    background-image:url(https://cdn.images.express.co.uk/img/dynamic/143/590x/secondary/GTA-6-news-2396709.webp?r=1585838420454);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.reviews-col3{
+    width:33.33%;
+    border: 3px solid black;
+    margin:5px;
+    text-align: center;
+    background-image:url(https://cdn.images.express.co.uk/img/dynamic/143/590x/secondary/GTA-6-news-2396709.webp?r=1585838420454);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
