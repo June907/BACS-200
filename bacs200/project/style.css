@@ -123,17 +123,7 @@ a.newgame:hover{
     text-decoration: none;
 }
 
-.bot {
-    transition: .5s ease;
-    opacity: 1;
-    
-    margin: 0px;
-    padding: 0px;
-    width:100%;
-    font-size: 20px;
-    
 
-}
 .wraper:hover .image {
   opacity: 1;
 }
@@ -148,9 +138,7 @@ a.newgame:hover{
     font-size: 26px;
     padding: 16px 32px;
     text-align: center;
-    text-decoration: none;
-    
-    
+    text-decoration: none; 
     
 }
 
