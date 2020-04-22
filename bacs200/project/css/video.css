@@ -79,25 +79,6 @@ a.newgame{
 a.newgame:hover{
     color:blue;
 }
-.videowrapper{
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top:25px;
-    height:0px;
-}
-.videowrapper iframe{
-    position:absolute;
-    left:0px;
-    top:0px;
-    right:0px;
-    bottom: 0px;
-    height:100%;
-    width:100%;
-
-    
-}
-
-
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -124,6 +105,26 @@ a.newgame:hover{
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
+
+/*videopage*/
+.videowrapper{
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top:25px;
+    height:0px;
+}
+.videowrapper iframe{
+    position:absolute;
+    left:0px;
+    top:0px;
+    right:0px;
+    bottom: 0px;
+    height:100%;
+    width:100%;
+
+    
+}
+
 /*cover image*/
 
 .row:after {
@@ -168,6 +169,8 @@ p.imgtext{
     font-weight:bold;
     color:black;
 }
+
+
 
 
 

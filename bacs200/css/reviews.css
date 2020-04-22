@@ -81,12 +81,13 @@ a.newgame:hover{
     color:blue;
 }
 
-
+/*wikipage*/
 .reviews-row{
     display:flex;
 }
 .reviews-image{
-    width: 100%; 
+    width: 100%;
+    height:400px;
 }
 .hiddenimg{
     width:100%;
@@ -104,7 +105,7 @@ a.newgame:hover{
 }
 
 .popup {
-  transition: .5s ease;
+  /*transition: .5s ease;*/
   opacity: 0;
   position: relative;
   left: 50%;
@@ -125,7 +126,7 @@ a.newgame:hover{
     border: 3px solid black;
     margin:5px;
     text-align: center;
-    background-image:url(https://cdn.images.express.co.uk/img/dynamic/143/590x/secondary/GTA-6-news-2396709.webp?r=1585838420454);
+    background-image:url(https://file-cdn.urcdkeys.com/product/P201609081840430466.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -136,9 +137,15 @@ a.newgame:hover{
     border: 3px solid black;
     margin:5px;
     text-align: center;
-    background-image:url(https://cdn.images.express.co.uk/img/dynamic/143/590x/secondary/GTA-6-news-2396709.webp?r=1585838420454);
+    background-image:url(https://static-cdn.jtvnw.net/ttv-boxart/Animal%20Crossing%3A%20New%20Horizons.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     
+}
+wiki-page{
+    font-size:36px;
+    font-weight: bold;
+    line-height: 100px;
+    text-transform: capitalize;
 }

@@ -4,7 +4,6 @@
 }
 a{
     text-decoration: none;
-    
 }
 a:visited{
     color:black;
@@ -80,12 +79,11 @@ a.newgame{
 a.newgame:hover{
     color:blue;
 }
-
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top:45%;
+  top: 50%;
   width: auto;
   padding: 16px;
   margin-top: -22px;
@@ -99,8 +97,7 @@ a.newgame:hover{
 
 /* Position the "next button" to the right */
 .next {
-    
-  right: 460px;
+  right: 0;
   border-radius: 3px 0 0 3px;
 }
 
@@ -108,11 +105,14 @@ a.newgame:hover{
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
-
-
+/*home page*/
+/*slide*/
+.slidewrapper{
+    position: relative;
+    margin: 0 auto;
+    width:1000px;
+}
 /* Caption text */
-
-
 .image {
     opacity: 1;
     display: block;
@@ -122,15 +122,11 @@ a.newgame:hover{
     backface-visibility: hidden;
     text-decoration: none;
 }
-
-
 .wraper:hover .image {
   opacity: 1;
 }
-
 .wraper:hover .bot {
-  opacity: 1;
-  
+  opacity: 1; 
 }
 .text {
     border: 3px solid black;
@@ -139,7 +135,6 @@ a.newgame:hover{
     padding: 16px 32px;
     text-align: center;
     text-decoration: none; 
-    
 }
 
 /* Fading animation */
@@ -149,49 +144,166 @@ a.newgame:hover{
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
 @-webkit-keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
 }
-
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
 }
-
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
-/*imglist*/
-p{
-    width: 100%;
-    text-align: left;
-    margin:10px;;
-    padding: 10px;;
-    font-size:36px;
-
+/*videopage*/
+.videowrapper{
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top:25px;
+    height:0px;
 }
+.videowrapper iframe{
+    position:absolute;
+    left:0px;
+    top:0px;
+    right:0px;
+    bottom: 0px;
+    height:100%;
+    width:100%;
 
-.row {
-  display: flex;
-}
-
-/* Create three equal columns that sits next to each other */
-.column {
-  flex: 33.33%;
-  padding: 10px;
-}
-div p{
-    color:black;
-    text-decoration: none;
-    font-size:24px;
-    text-align: center;
-    margin:5px;;
-    padding:0;
     
 }
+
+/*cover image*/
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* five thumbmail image*/
+.column {
+  float: left;
+  width: 20%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+/* image gallery*/
+p.imgtitle{
+    font-size:36px;
+    font-weight: bold;
+    line-height: 100px;
+    text-transform: capitalize;
+    
+}
+.imgrow{
+    display:flex;
+}
+.imgcol{
+    flex:16.666%;
+    padding:8px;
+}
+p.imgtext{
+    font-size:22px;
+    line-height:30px;
+    font-weight:bold;
+    color:black;
+    text-transform: capitalize;
+}
+/*wikipage*/
+.wiki-row{
+    display:flex;
+}
+.wiki-image{
+    width: 100%;
+    height:400px;
+}
+.hiddenimg{
+    width:100%;
+}
+.wiki-col1{
+    width:33.33%;
+    border: 3px solid black;
+    margin:5px;
+    text-align: center;
+    background-image:url(https://cdn.images.express.co.uk/img/dynamic/143/590x/secondary/GTA-6-news-2396709.webp?r=1585838420454);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.popup {
+  /*transition: .5s ease;*/
+  opacity: 0;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%); 
+}
+.hiddenimg:hover .popup{
+    opacity: 1;
+}
+.wikitext{
+    border: 5px solid white;
+    background-color:black;
+    font-size:46px;
+    color:white;
+}
+
+.wiki-col2{
+    width:33.33%;
+    border: 3px solid black;
+    margin:5px;
+    text-align: center;
+    background-image:url(https://file-cdn.urcdkeys.com/product/P201609081840430466.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.wiki-col3{
+    width:33.33%;
+    border: 3px solid black;
+    margin:5px;
+    text-align: center;
+    background-image:url(https://static-cdn.jtvnw.net/ttv-boxart/Animal%20Crossing%3A%20New%20Horizons.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.wiki-title{
+    font-size:36px;
+    font-weight: bold;
+    line-height: 100px;
+    text-transform: capitalize;
+}
+.guide-row{
+    display: flex;
+}
+.guide-col{
+    width:25%;
+    margin:0px;
+    padding: 37px;
+    
+}
+a.wiki-link:hover{
+    text-decoration: underline;
+    color:black
+}
+
+
+
 
 
 
