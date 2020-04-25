@@ -16,6 +16,10 @@ a:visited{
     margin: 0 auto;
     width:1000px;
 }
+.news-wraper{
+    margin:0 auto;
+    width:1300px;
+}
 nav.list{
     width:100%;
     height:100px;
@@ -301,7 +305,44 @@ a.wiki-link:hover{
     text-decoration: underline;
     color:black
 }
-
+/*news page*/
+.news-row{
+    display:flex;
+}
+.news-col{
+    flex:60%;
+    padding:8px;
+    margin:5px;
+}
+.hidden-text{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  
+  left: 50%;
+  transform: translate(-50%,-100%);
+  
+  text-align: center;
+    
+}
+.news-img{
+      opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.pop-text {
+  font-size: 16px;
+  
+}
+.news-col:hover .news-img{
+    opacity: 0.7;
+}
+.news-col:hover .hidden-text{
+    opacity: 1;
+}
 
 
 
