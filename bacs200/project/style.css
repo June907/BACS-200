@@ -309,39 +309,85 @@ a.wiki-link:hover{
 .news-row{
     display:flex;
 }
+/*first windows*/
 .news-col{
     flex:60%;
-    padding:8px;
-    margin:5px;
+    margin:8px;
+    padding: 0px;
 }
+
 .hidden-text{
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  
-  left: 50%;
-  transform: translate(-50%,-100%);
-  
-  text-align: center;
+    transition: .5s ease;
+    opacity: 0.7;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,-100%);
+    text-align: left;
+    padding: 15px;
+    margin: 0;
     
 }
+
 .news-img{
-      opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
+    opacity: 1;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    margin: 0;
 }
-.pop-text {
-  font-size: 16px;
-  
+a.pop-text {
+    font-size: 30px;
+    font-weight: bold;
 }
+
 .news-col:hover .news-img{
     opacity: 0.7;
 }
 .news-col:hover .hidden-text{
     opacity: 1;
+    text-decoration: underline;
+}
+/*second windows*/
+.news2-col{
+    flex:40%;
+    margin:8px;
+    padding: 0px;
+    
+}
+.hidden-text2{
+    transition: .5s ease;
+    opacity: 0.7;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,-100%);
+    text-align: left;
+    padding: 12px;
+    margin: 0;
+}
+
+.news-img2{
+    opacity: 1;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    margin: 0;
+}
+
+a.pop-text2 {
+    font-size: 30px;
+    font-weight: bold;
+  
+}
+.news2-col:hover .news-img2{
+    opacity: 0.7;
+}
+.news2-col:hover .hidden-text2{
+    opacity: 1;
+    text-decoration: underline;
+}
+/*bot box*/
+.news-box{
+    flex:25%;
 }
 
 
