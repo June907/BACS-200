@@ -13,9 +13,11 @@
         <nav class="list">
             <div class="banner">
                 <ul class="list">
-                    <li class="title"><a class="title" href="index.html">Game Session</a></li>
+                    <li class="title"><a class="title" href="index.html">Game Session</a>
+                    </li>
+                    
                     <li style="float: right" class="list">         
-                        <a  class="list" href="https://corp.ign.com/">Others</a>
+                        <a  class="list" href="feedback.html">Feedback</a>
                     </li>
                     <li style="float: right" class="list">
                         <a  class="list" href="https://www.ign.com/wikis">Wikis</a>
@@ -58,6 +60,21 @@
         </nav>
     </header>
     <main>
+        <div class="wraper">
+        <p class="feedback-title"> Feedback</p>
+        <form class="feedback-form" action="feedbackform.php" method="post">
+            <input type="text" name="name" placeholder="Full name">
+            <input type="text" name="mail" placeholder="Your e-mail">
+            <input type="text" name="subject" placeholder="Subject">
+            <textarea name="message" placeholder="Feedback"></textarea>
+            <button type="submit" name="submit">Send Feedback</button>
+        </form>
         
-    
+        </div>
     </main>
+    <section>
+        <div class="wraper">
+        <p class="about"> About</p>
+        <p></p>
+        </div>
+    </section>

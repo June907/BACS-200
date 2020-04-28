@@ -9,7 +9,10 @@ a{
 a:visited{
     color:black;
 }
+
+
 .banner{
+    
     margin:0 auto;
     width: 1500px;
 }
@@ -161,6 +164,91 @@ a.newgame:hover{
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+/*reviewspage*/
+.reviews-row{
+    display:flex;
+    
+}
+/*first windows*/
+.reviews-col{
+    flex:25%;
+    margin:8px;
+    padding: 0px;
+}
+
+.hidden-text{
+    
+    width:100%;
+    bottom: -2%;
+    opacity: 0.7;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,-100%);
+    
+    line-height: 30px;
+
+    
+}
+
+.reviews-img{
+    opacity: 1;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    margin: 0;
+}
+a.reviews-text {
+    font-size: 20px;
+    font-weight: 900;
+    
+}
+.hidden-border{
+    
+    border: 3px solid green;
+    opacity: 0.7;
+    background-color: green;
+    
+}
+.hidden-border2{
+    border: 3px solid red;
+    opacity: 0.7;
+    background-color: red;
+    
+}
+.hidden-border3{
+    border: 3px solid rgb(66, 147, 245);
+    opacity: 0.7;
+    background-color: rgb(66, 147, 245);
+    
+}
+.hidden-border4{
+    border: 3px solid #bb33ff;
+    opacity: 0.7;
+    background-color: #bb33ff;
+    
+}
+
+.reviews-col:hover .reviews-img{
+    opacity: 0.7;
+}
+.reviews-col:hover .hidden-border{
+    opacity: 1;
+    text-decoration: underline;
+}
+.reviews-col:hover .hidden-border2{
+    opacity: 1;
+    text-decoration: underline;
+}
+.reviews-col:hover .hidden-border3{
+    opacity: 1;
+    text-decoration: underline;
+}
+.reviews-col:hover .hidden-border4{
+    opacity: 1;
+    text-decoration: underline;
+}
+
+
 /*videopage*/
 .videowrapper{
     position: relative;
@@ -407,6 +495,40 @@ a.pop-text2 {
 .news-subtitle:hover{
     text-decoration: underline;
     color:blue;
+}
+/*about page*/
+.about-title{
+    font-size:36px;
+    font-weight: bold;
+    line-height: 100px;
+}
+.about-content{
+    font-size:24px;
+    text-indent: 50px;
+    line-height: 50px;
+    opacity: 1;
+    
+}
+.fa {
+  padding: 30px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 
